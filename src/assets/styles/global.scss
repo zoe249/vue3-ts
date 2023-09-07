@@ -1,0 +1,58 @@
+.top-button-box {
+  @media screen and (max-width: 600px) {
+    min-width: 130px;
+  }
+
+  min-width: 172px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 4px 4px 4px 4px;
+  opacity: 1;
+  text-align: center;
+  color: #ffffff;
+  background-color: $blue;
+  font-size: 16px;
+  cursor: pointer;
+
+  .iconfont {
+    margin-right: 6px;
+  }
+}
+
+.table-btn-box {
+  .el-button {
+    margin: 0px !important;
+    padding: 0 !important;
+  }
+
+  .el-button:not(:last-child) {
+    margin-right: 18px !important;
+  }
+
+  .print-btn,
+  .audit-btn {
+    color: $blue !important;
+  }
+
+  .edit-btn {
+    color: #65cf8a !important;
+  }
+
+  .delete-btn {
+    color: $del !important;
+  }
+
+  .el-button {
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    .iconfont {
+      margin-right: 5px;
+    }
+  }
+}
+.el-button.is-plain {
+  color: $--color-primary;
+  border-color: $--color-primary;
+}
