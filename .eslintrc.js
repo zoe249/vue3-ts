@@ -23,7 +23,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: 'module',
-    parser: '@typescript-eslint/parser'
+    parser: '@typescript-eslint/parser',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
     'prettier/prettier': 'error',

@@ -9,6 +9,7 @@ import createViteMockServe from './vite-mock'
 import createEslintPlugin from './eslint-plugin'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import Icons from 'unplugin-icons/vite'
+import VueJsx from '@vitejs/plugin-vue-jsx'
 export default function createVitePlugins(viteEnv, isBuild = false) {
   const vitePlugins = [vue()]
   vitePlugins.push(createAutoImport())
@@ -18,6 +19,7 @@ export default function createVitePlugins(viteEnv, isBuild = false) {
   vitePlugins.push(createSvgIcon(isBuild))
   vitePlugins.push(createEslintPlugin())
   vitePlugins.push(DefineOptions())
+  vitePlugins.push(VueJsx())
   vitePlugins.push(
     Icons({
       autoInstall: true
